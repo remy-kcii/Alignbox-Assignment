@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun Friday Group Chat</title>
+  <link rel="stylesheet" type="text/css" href="global.css">
+
+ 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+</head>
+<body>
+  <div class="phone-container">
+
+
+    <div class="phone-screen">
+   
+
+      <!-- Header -->
+      <div class="header">
+        <div class="back-btn">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+        <div class="group-avatar">FF</div>
+        <div class="group-info">
+          <h3>Fun Friday Group</h3>
+        </div>
+
+       <button  onclick="toggle()" class="incognito-btn">
+  <i class="fas fa-user-secret"></i>
+</button>
+
+      </div>
+
+      
+      <div class="chat-container" id="chatContainer">
+   <div id="loading" style="display:none; text-align:center; margin:10px;">
+  <div class="spinner"></div>
+</div>
+      </div>
+
+
+
+
+      
+      <div class="anonymous-notice"  id="anonymousNotice">
+        <i class="fas fa-user-secret"></i> Now you're appearing as Anonymous! <i class="fas fa-user-secret"></i>
+      </div>
+
+     
+      <div class="input-container">
+        <div class="input-container-inside">
+        <input type="text" class="message-input" id="messageInput" placeholder="Type a message ...">
+      
+         <div class="attachment-btn">
+         <i class="fas fa-camera" style="color: #666"></i>
+        </div>
+           
+             <div class="attachment-btn">
+          <i class="fas fa-paperclip"  style="color: #666"></i>
+        </div>
+      </div>
+        <button class="send-btn" id="sendBtn">
+          <i class="fas fa-paper-plane"   style="color: white;"></i>
+        </button>
+    </div>
+  </div>
+
+  <script src="fetch.js"></script>
+</body>
+</html>
